@@ -26,6 +26,7 @@ height: 140px;
 width: 100%;
 background-color: var(--Primary-color);
 border-bottom: 1px solid grey;
+/* background-color: rgb(255, 206, 206); */
 /* position: fixed;
 top:0;
 z-index: 1; */
@@ -85,18 +86,17 @@ gap: 3rem;
    width: 100%; 
    display: flex;
    flex-wrap: wrap;
-   padding-top: 2rem;
+   padding-top: 4rem;
    padding-bottom: 2rem;
    justify-content: space-between;
-   /* background-color:green; */
    background-color: var(--Primary-color);
   
 }
 .hero-content{
-/* height: auto; */
-padding-left: 17.25vw;
+/* background-color: #0c6fb2; */
 letter-spacing: 0.3rem;
-line-height: 2.5rem;
+line-height: 4vw;
+padding-left: 20vw;
 
 }
 
@@ -107,19 +107,19 @@ line-height: 2.5rem;
     
 }
 .name {
-    font-size: 2.5rem;
+    font-size: 4vw;
     /* animation: change 2.5s infinite  ;  */
     text-decoration:line-through;
     color: var(--font-color);
     
 }
 .heading-2 {
-   font-size: 2rem;
+   font-size: 2vw;
    color:var(--font-color);
-   opacity: 0.5;
+
 }
 .btn-1 {
-    font-size: 2rem;
+    font-size: 2.5vw;
     margin-top: 2rem;
     background-color: var(--Primary-color);
     color:var(--para-color);
@@ -141,6 +141,7 @@ line-height: 2.5rem;
 }
 .program1{
     color:#e35527;
+
 }
 .program2{
     color: #0c6fb2;
@@ -149,13 +150,19 @@ line-height: 2.5rem;
     color: #eab925;
 }
 
+.program1,.program2,.program3{
+    opacity: 0.5;
+}
+.program1:hover,.program2:hover,.program3:hover{
+    opacity: 1;
+}
 .hero-images{
 height: 20rem;
 width: 20rem;
 border-radius: 50%;
 background-image: url(images/icon.png);
 background-size: cover;
-margin-right: 3rem;
+margin-right: 8vw;
 
 }
 
@@ -166,6 +173,8 @@ margin-right: 3rem;
     height: auto;
     width: 100%;
     font-size: 2rem;
+    /* background-color: red; */
+    margin-top: 5rem;
 /*     
     background-color: red; */
      justify-content: center; 
@@ -198,6 +207,12 @@ margin-right: 3rem;
 
 /*  */
 @media  (max-width:700px){
+    .hero-section{
+      
+        padding-top: 0rem;
+      
+       
+     }
     .nav-content a{
         font-size: 1.2rem;
       
@@ -207,6 +222,7 @@ margin-right: 3rem;
     }
     .hero-content{
         padding-left: 9vw;
+        line-height: 3rem;
      
     }
     
@@ -216,7 +232,7 @@ font-size: 1.5rem;
     
 }
 .name {
-    font-size: 2rem;
+    font-size: 1rem;
    
 }
 .heading-2 {
@@ -268,11 +284,44 @@ margin-right: 10rem;
 
 } */
 
+ /* @media (min-width: 1200px) /*more than 1200px*/
+/* {
+    
+    .nav-content{
+    gap: 2rem;
 
+    }
+    .hero-content{
+        padding-left: 17vw;
+     
+    }
+    
+.heading-1 {
 
+font-size: 1.5rem;
+    
+}
+.name {
+    font-size: 2rem;
+   
+}
+.heading-2 {
+   font-size: 1.5rem;
+   
+}
+.hero-images{
+    height: 20rem;
+    width: 20rem;
+}
+.hero-images{
+    margin-right:15vw;
+
+}
+    
+  
+   */ 
 
     
-
 
 
 
