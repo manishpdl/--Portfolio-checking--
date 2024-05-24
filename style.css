@@ -10,9 +10,9 @@
 }
 html, body{
   height: 100%;
-  background-color:var(--Primary-color);
+  width: 100%;
+  background-color:black;
 }
-
 
 :root{
     --Primary-color:black;
@@ -22,16 +22,14 @@ html, body{
 }
 
 
-
 .navbar {
 height: 140px;
 width: 100%;
 background-color: var(--Primary-color);
 border-bottom: 1px solid grey;
-/* background-color: rgb(255, 206, 206); */
-/* position: fixed;
-top:0;
-z-index: 1; */
+/* background-color: rebeccapurple */
+
+
  
 }
 .logo {
@@ -83,14 +81,15 @@ gap: 3rem;
     transform: scale(1.1);
 
    
-   }
+}
 .hero-section{
    width: 100%; 
    display: flex;
    flex-wrap: wrap;
+   flex-direction: row;
    padding-top: 4rem;
    padding-bottom: 2rem;
-   justify-content: space-between;
+   justify-content: center;
    background-color: var(--Primary-color);
   
 }
@@ -204,127 +203,17 @@ margin-right: 8vw;
 
 
 
-
-
-
 /*  */
 @media  (max-width:700px){
-    .hero-section{
-      
-        padding-top: 0rem;
-      
-       
-     }
+   
     .nav-content a{
-        font-size: 4vw;
+        font-size: 1.05rem;
       
     }
     .nav-content{
     gap: 0.5rem;
-    }
-    .hero-content{
-        padding-left: 9vw;
-        line-height: 3rem;
-     
-    }
-    
-.heading-1 {
+    }}
 
-font-size: 1.5rem;
-    
-}
-.name {
-    font-size: 1rem;
-   
-}
-.heading-2 {
-   font-size: 1.5rem;
-   
-}
-.hero-images{
-    height: 10rem;
-    width: 10rem;
-margin-top: 2rem;
-}
-.hero-images{
-    margin-left: 2rem;
-
-}
-}
-
-
-/* @media   (max-width:1170px)
-{
-    
-    .nav-content a{
-        font-size: 1.2rem;
-      
-    }
-    
-    .hero-content{
-        padding-left: 15vw;
-     
-    }
-    
-.heading-1 {
-
-font-size: 1.5rem;
-    
-}
-.name {
-    font-size: 3rem;
-   
-}
-.heading-2 {
-   font-size: 1.5rem;
-   
-}
-.hero-images{
-    height: 13rem;
-    width: 13rem;
-margin-top: 2rem;
-margin-right: 10rem;
-
-} */
-
- /* @media (min-width: 1200px) /*more than 1200px*/
-/* {
-    
-    .nav-content{
-    gap: 2rem;
-
-    }
-    .hero-content{
-        padding-left: 17vw;
-     
-    }
-    
-.heading-1 {
-
-font-size: 1.5rem;
-    
-}
-.name {
-    font-size: 2rem;
-   
-}
-.heading-2 {
-   font-size: 1.5rem;
-   
-}
-.hero-images{
-    height: 20rem;
-    width: 20rem;
-}
-.hero-images{
-    margin-right:15vw;
-
-}
-    
-  
-   */ 
-
-    
 
 
 

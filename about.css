@@ -10,6 +10,8 @@
 }
 html, body{
   height: 100%;
+  width: 100%;
+
   background-color:var(--Primary-color);
 }
 
@@ -84,41 +86,54 @@ gap: 3rem;
 
 
 .main-section{
-    margin-top: 3rem;
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-justify-content: space-evenly;
+justify-content: center;
 align-items: center;
 }
 .details{
     color: var(--font-color);
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: 0.15rem;
-  line-height: 3vw;
-   /* background-color: #18857e; */
- 
-width: 50%;
-/* margin-right: 4rem; */
+    text-align: justify;
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+    line-height: 2.5vw; 
+    width: 100%;
+    margin-left: 3rem;
 }
 .image{
     background-image: url(https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/400384486_1797015567422314_302379388456637814_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=PPdWvUqNEqAQ7kNvgHdCsZd&_nc_ht=scontent-sin6-3.xx&oh=00_AYAJf1ASLZsox3-jFvOmTmwGou3nTcqvV8rR5PjOyxSZ_A&oe=66528295);
-    height: 30rem;
-    width: 30rem;
+    height: 33vw;
+    width: 50vw;
     background-size: cover;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    
+
 }
 h1{
+    text-align: center;
     font-size: 3rem;
     margin-bottom: 2rem;
     text-decoration: underline;
 }
+div.down-button{
+    text-align: center;
+}
 
-
+.btn a{
+    color: var(--font-color);
+}
 .btn{
 padding: 0.5rem 2rem 0.5rem 2rem; 
-color: var(--Primary-color);
 background-color: var(--para-color);
-font-size: 1.4rem;
+font-size: 1.4vw;
+margin-top: 1rem;
 }
 span.name{
     color: var(--para-color);
@@ -126,3 +141,66 @@ span.name{
 .desc{
     opacity: 0.8;
 }
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media  (max-width:700px){
+   
+    .nav-content a{
+        font-size: 1.05rem;
+      
+    }
+    .nav-content{
+    gap: 0.5rem;
+    }}
+    
+    
+@media (min-width: 319px) and (max-width: 700px)
+    {
+        .details{
+        font-size: 4vw;
+        line-height: 4.2vw; 
+        overflow: auto;
+
+        }
+        
+           .btn{
+            font-size: 1rem;
+        
+            }
+            h1{
+                position: absolute;
+                top: 0.1rem;
+                left: 29%;
+                display: block;
+                font-size: 8vw;
+                margin-bottom: 2rem;
+                text-decoration: underline;
+            }
+            .main-section{
+                position: relative;
+                display: flex;
+               justify-content: center;                flex-direction: column-reverse;
+            }
+            .image{
+                margin-top: 9vw;
+                height: 50vw;
+                width: 50vw;
+             
+                }
+                p.desc{
+                    padding-right: 2.5rem;
+                }
+                div.down-button{
+                    margin-right: 4rem;
+                }
+
+    }
