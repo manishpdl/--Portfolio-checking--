@@ -194,6 +194,14 @@ padding: 1rem;
     .nav-content{
     gap: 0.5rem;
     }}
+    @media  (max-width:289px){
+  
+        .nav-content a{
+            font-size: 0.9rem;
+          
+        }
+        
+    }
 
 
 
