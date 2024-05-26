@@ -205,6 +205,7 @@ div.message-details.details{
 .more-links p{
     padding-bottom: 1rem;
     opacity: 0.8;
+    letter-spacing: 2px;
 }
 
 span.per-detail{
@@ -213,8 +214,16 @@ span.per-detail{
 }
 
 
-
-
+.more-links:hover{
+    opacity: 1;
+}
+.more-links a i:hover{
+    transform: scale(1.5);
+}
+ button:active{
+    background-color: var(--para-color);
+    border: 1px solid var(--font-color);
+ }
 
 /*  */
 @media  (max-width:700px){
