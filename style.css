@@ -104,6 +104,7 @@ html, body {
 .name {
     font-size: 3rem;
     font-weight: bold;
+    letter-spacing: 0.2rem;
     text-decoration: line-through;
     color: var(--font-color);
 }
