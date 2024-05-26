@@ -100,7 +100,9 @@ html, body {
     color: var(--para-color);
     font-size: 1.5rem;
 }
-
+h4.heading-1{
+letter-spacing: 0.2rem;
+}
 .name {
     font-size: 3rem;
     font-weight: bold;
@@ -111,7 +113,10 @@ html, body {
 .name:hover{
     transform: scale(1.2);
 }
-    
+ p.heading-2{
+     letter-spacing: 0.2rem;
+ }
+
 
 .heading-2 {
     font-size: 2rem;
